@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fire Notes</title>
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!--MAYBE DELETE <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
     <style type="text/css">
@@ -25,7 +25,7 @@
     <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <script src="js/signIn.js"></script>
+    <script defer src="/js/signIn.js"></script>
   </head>
   <body>
 
@@ -43,7 +43,10 @@
                         <br>
                         <p class="has-text-centered">
                             <a class="button is-medium is-info is-outlined" onclick="signIn()">
-                                Sign In
+                                Sign In with Username/Password
+                            </a>
+                            <a class="button is-medium is-info is-outlined" onclick="signInGoogle()">
+                                Sign In with Google
                             </a>
                         </p>
                     </div>

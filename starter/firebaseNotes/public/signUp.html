@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fire Notes</title>
+    <title>Sign Up</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -15,7 +15,7 @@
     <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
     <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-    <script src="js/writeNote.js"></script>
+    <script defer src="js/signUp.js"></script>
   </head>
   <body>
 
@@ -26,39 +26,25 @@
 
             <!-- WELCOME HERO -->
             <div class="column is-two-thirds has-text-left">
-              <h1 class="title is-1" id="welcome"></h1>
-              <h1 class="title is-3">
-                “The most beautiful things are those that madness prompts and reason writes."
-              </h1>
-              <h1 class="subtitle is-5">
-                —Andre Gide
-              </h1>
-              <a><button class="button is-link has-text-weight-medium is-medium is-centered">Click Here</button></a>
-              to view your notes.
+              <h1 class="title is-1">Sign Up</h1>
             </div>
 
             <!-- NOTE FORM -->
             <div class="column is-one-third has-text-left">
               <div class="field">
-                <label class="label">Title</label>
+                <label class="label">Username</label>
                 <div class="control">
-                  <input class="input is-medium" type="text" id="noteTitle">
+                  <input class="input is-medium" type="text" id="username">
                 </div>
               </div>
               <div class="field">
-                <label class="label">Note</label>
+                <label class="label">Password</label>
                 <div class="control">
-                  <textarea class="textarea is-medium" id="noteText"></textarea>
-                </div>
-              </div>
-              <div class="field">
-                <label class="label">Label</label>
-                <div class="control">
-                  <input class="input is-medium" type="text" id="labelText">
+                  <input class="input is-medium" type="password" id="password">
                 </div>
               </div>
               <div class="control">
-                <button class="button is-link is-fullwidth has-text-weight-medium is-medium" onclick="handleNoteSubmit()">Create Note</button>
+                <button class="button is-link is-fullwidth has-text-weight-medium is-medium" onclick="signUp()">Sign Up</button>
               </div>
             </div>
             
